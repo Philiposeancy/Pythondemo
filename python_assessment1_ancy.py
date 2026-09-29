@@ -1,5 +1,4 @@
 class bank_details:
-  
 
     def __init__(self,number,name,pin,password):
         self.account_number=number
@@ -43,7 +42,7 @@ pin_input=input("Enter PIN:")
 
 for account in accounts:
     if account1.account_login(user_input,pin_input):
-        amount = float(input("Enter deposit amount..:"))
+        amount=float(input("Enter deposit amount..:"))
         account1.deposit(amount)
-        withdrawal_amount = float(input("Enter withdrawal amount...:"))
+        withdrawal_amount=float(input("Enter withdrawal amount...:"))
         account1.withdrawal(withdrawal_amount)
